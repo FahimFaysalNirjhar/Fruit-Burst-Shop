@@ -467,11 +467,114 @@
                   aria-label="5 star"
                 />
               </div>
-              <p
-                class="font-lato text-lg font-bold text-[#F85559] text-center mt-6"
+              <!-- modal -->
+              <!-- Open the modal using ID.showModal() method -->
+              <button
+                class="btn btn-ghost text-[#F85559] font-lato text-lg font-bold"
+                onclick="my_modal_1.showModal()"
               >
                 Details
-              </p>
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <div
+                  class="modal-box flex flex-col justify-center items-center gap-8"
+                >
+                  <div>
+                    <img src="images/fruit6.png" alt="" />
+                  </div>
+                  <h1
+                    class="text-[#121212] font-lato text-4xl font-extrabold text-center"
+                  >
+                    Apples
+                  </h1>
+                  <p
+                    class="text-[#12121299] font-lato text-base font-medium text-center max-w-96"
+                  >
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                  <!-- rating -->
+                  <div class="rating rating-lg rating-half">
+                    <input type="radio" name="rating-1" class="rating-hidden" />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                      aria-label="0.5 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                      aria-label="1 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                      aria-label="1.5 star"
+                      checked="checked"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                      aria-label="2 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                      aria-label="2.5 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                      aria-label="3 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                      aria-label="3.5 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                      aria-label="4 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                      aria-label="4.5 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                      aria-label="5 star"
+                    />
+                  </div>
+                  <a
+                    class="btn font-lato border-none text-xl font-extrabold text-white bg-[var(--primary-color)] hover:bg-[var(--primary-hover)] active:bg-[var(--primary-hover)] active:scale-95 active:opacity-90 transition-all duration-300 outline-none select-none touch-manipulation"
+                    href=""
+                    >Buy Now</a
+                  >
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button
+                        class="btn border border-[#F85559] text-[#F85559]"
+                      >
+                        Close
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
           <!-- card 2 -->
@@ -500,71 +603,174 @@
                 <input type="radio" name="rating-2" class="rating-hidden" />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-20"
                   class="mask mask-star-2 mask-half-1 bg-[#F85559]"
                   aria-label="0.5 star"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-20"
                   class="mask mask-star-2 mask-half-2 bg-[#F85559]"
                   aria-label="1 star"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-20"
                   class="mask mask-star-2 mask-half-1 bg-[#F85559]"
                   aria-label="1.5 star"
                   checked="checked"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-20"
                   class="mask mask-star-2 mask-half-2 bg-[#F85559]"
                   aria-label="2 star"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-20"
                   class="mask mask-star-2 mask-half-1 bg-[#F85559]"
                   aria-label="2.5 star"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-20"
                   class="mask mask-star-2 mask-half-2 bg-[#F85559]"
                   aria-label="3 star"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-20"
                   class="mask mask-star-2 mask-half-1 bg-[#F85559]"
                   aria-label="3.5 star"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-20"
                   class="mask mask-star-2 mask-half-2 bg-[#F85559]"
                   aria-label="4 star"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-20"
                   class="mask mask-star-2 mask-half-1 bg-[#F85559]"
                   aria-label="4.5 star"
                 />
                 <input
                   type="radio"
-                  name="rating-2"
+                  name="rating-20"
                   class="mask mask-star-2 mask-half-2 bg-[#F85559]"
                   aria-label="5 star"
                 />
               </div>
-              <p
-                class="font-lato text-lg font-bold text-[#F85559] text-center mt-6"
+              <!-- !-- modal -->
+              <!-- Open the modal using ID.showModal() method -->
+              <button
+                class="btn btn-ghost text-[#F85559] font-lato text-lg font-bold"
+                onclick="my_modal_2.showModal()"
               >
                 Details
-              </p>
+              </button>
+              <dialog id="my_modal_2" class="modal">
+                <div
+                  class="modal-box flex flex-col justify-center items-center gap-8"
+                >
+                  <div>
+                    <img src="images/fruit7.png" alt="" />
+                  </div>
+                  <h1
+                    class="text-[#121212] font-lato text-4xl font-extrabold text-center"
+                  >
+                    Orange
+                  </h1>
+                  <p
+                    class="text-[#12121299] font-lato text-base font-medium text-center max-w-96"
+                  >
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                  <!-- rating -->
+                  <div class="rating rating-lg rating-half">
+                    <input type="radio" name="rating-1" class="rating-hidden" />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                      aria-label="0.5 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                      aria-label="1 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                      aria-label="1.5 star"
+                      checked="checked"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                      aria-label="2 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                      aria-label="2.5 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                      aria-label="3 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                      aria-label="3.5 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                      aria-label="4 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                      aria-label="4.5 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                      aria-label="5 star"
+                    />
+                  </div>
+                  <a
+                    class="btn font-lato border-none text-xl font-extrabold text-white bg-[var(--primary-color)] hover:bg-[var(--primary-hover)] active:bg-[var(--primary-hover)] active:scale-95 active:opacity-90 transition-all duration-300 outline-none select-none touch-manipulation"
+                    href=""
+                    >Buy Now</a
+                  >
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button
+                        class="btn border border-[#F85559] text-[#F85559]"
+                      >
+                        Close
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
           <!-- card 3 -->
@@ -593,71 +799,174 @@
                 <input type="radio" name="rating-3" class="rating-hidden" />
                 <input
                   type="radio"
-                  name="rating-3"
+                  name="rating-30"
                   class="mask mask-star-2 mask-half-1 bg-[#F85559]"
                   aria-label="0.5 star"
                 />
                 <input
                   type="radio"
-                  name="rating-3"
+                  name="rating-30"
                   class="mask mask-star-2 mask-half-2 bg-[#F85559]"
                   aria-label="1 star"
                 />
                 <input
                   type="radio"
-                  name="rating-3"
+                  name="rating-30"
                   class="mask mask-star-2 mask-half-1 bg-[#F85559]"
                   aria-label="1.5 star"
                   checked="checked"
                 />
                 <input
                   type="radio"
-                  name="rating-3"
+                  name="rating-30"
                   class="mask mask-star-2 mask-half-2 bg-[#F85559]"
                   aria-label="2 star"
                 />
                 <input
                   type="radio"
-                  name="rating-3"
+                  name="rating-30"
                   class="mask mask-star-2 mask-half-1 bg-[#F85559]"
                   aria-label="2.5 star"
                 />
                 <input
                   type="radio"
-                  name="rating-3"
+                  name="rating-30"
                   class="mask mask-star-2 mask-half-2 bg-[#F85559]"
                   aria-label="3 star"
                 />
                 <input
                   type="radio"
-                  name="rating-3"
+                  name="rating-30"
                   class="mask mask-star-2 mask-half-1 bg-[#F85559]"
                   aria-label="3.5 star"
                 />
                 <input
                   type="radio"
-                  name="rating-3"
+                  name="rating-30"
                   class="mask mask-star-2 mask-half-2 bg-[#F85559]"
                   aria-label="4 star"
                 />
                 <input
                   type="radio"
-                  name="rating-3"
+                  name="rating-30"
                   class="mask mask-star-2 mask-half-1 bg-[#F85559]"
                   aria-label="4.5 star"
                 />
                 <input
                   type="radio"
-                  name="rating-3"
+                  name="rating-30"
                   class="mask mask-star-2 mask-half-2 bg-[#F85559]"
                   aria-label="5 star"
                 />
               </div>
-              <p
-                class="font-lato text-lg font-bold text-[#F85559] text-center mt-6"
+              <!-- !-- modal -->
+              <!-- Open the modal using ID.showModal() method -->
+              <button
+                class="btn btn-ghost text-[#F85559] font-lato text-lg font-bold"
+                onclick="my_modal_3.showModal()"
               >
                 Details
-              </p>
+              </button>
+              <dialog id="my_modal_3" class="modal">
+                <div
+                  class="modal-box flex flex-col justify-center items-center gap-8"
+                >
+                  <div>
+                    <img src="images/fruit8.png" alt="" />
+                  </div>
+                  <h1
+                    class="text-[#121212] font-lato text-4xl font-extrabold text-center"
+                  >
+                    Red Dragon
+                  </h1>
+                  <p
+                    class="text-[#12121299] font-lato text-base font-medium text-center max-w-96"
+                  >
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                  <!-- rating -->
+                  <div class="rating rating-lg rating-half">
+                    <input type="radio" name="rating-1" class="rating-hidden" />
+                    <input
+                      type="radio"
+                      name="rating-3"
+                      class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                      aria-label="0.5 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-3"
+                      class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                      aria-label="1 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-3"
+                      class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                      aria-label="1.5 star"
+                      checked="checked"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-3"
+                      class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                      aria-label="2 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-3"
+                      class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                      aria-label="2.5 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-3"
+                      class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                      aria-label="3 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-3"
+                      class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                      aria-label="3.5 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-3"
+                      class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                      aria-label="4 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-3"
+                      class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                      aria-label="4.5 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-3"
+                      class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                      aria-label="5 star"
+                    />
+                  </div>
+                  <a
+                    class="btn font-lato border-none text-xl font-extrabold text-white bg-[var(--primary-color)] hover:bg-[var(--primary-hover)] active:bg-[var(--primary-hover)] active:scale-95 active:opacity-90 transition-all duration-300 outline-none select-none touch-manipulation"
+                    href=""
+                    >Buy Now</a
+                  >
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button
+                        class="btn border border-[#F85559] text-[#F85559]"
+                      >
+                        Close
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
           <!-- card 4 -->
@@ -686,71 +995,174 @@
                 <input type="radio" name="rating-4" class="rating-hidden" />
                 <input
                   type="radio"
-                  name="rating-4"
+                  name="rating-40"
                   class="mask mask-star-2 mask-half-1 bg-[#F85559]"
                   aria-label="0.5 star"
                 />
                 <input
                   type="radio"
-                  name="rating-4"
+                  name="rating-40"
                   class="mask mask-star-2 mask-half-2 bg-[#F85559]"
                   aria-label="1 star"
                 />
                 <input
                   type="radio"
-                  name="rating-4"
+                  name="rating-40"
                   class="mask mask-star-2 mask-half-1 bg-[#F85559]"
                   aria-label="1.5 star"
                   checked="checked"
                 />
                 <input
                   type="radio"
-                  name="rating-4"
+                  name="rating-40"
                   class="mask mask-star-2 mask-half-2 bg-[#F85559]"
                   aria-label="2 star"
                 />
                 <input
                   type="radio"
-                  name="rating-4"
+                  name="rating-40"
                   class="mask mask-star-2 mask-half-1 bg-[#F85559]"
                   aria-label="2.5 star"
                 />
                 <input
                   type="radio"
-                  name="rating-4"
+                  name="rating-40"
                   class="mask mask-star-2 mask-half-2 bg-[#F85559]"
                   aria-label="3 star"
                 />
                 <input
                   type="radio"
-                  name="rating-4"
+                  name="rating-40"
                   class="mask mask-star-2 mask-half-1 bg-[#F85559]"
                   aria-label="3.5 star"
                 />
                 <input
                   type="radio"
-                  name="rating-4"
+                  name="rating-40"
                   class="mask mask-star-2 mask-half-2 bg-[#F85559]"
                   aria-label="4 star"
                 />
                 <input
                   type="radio"
-                  name="rating-4"
+                  name="rating-40"
                   class="mask mask-star-2 mask-half-1 bg-[#F85559]"
                   aria-label="4.5 star"
                 />
                 <input
                   type="radio"
-                  name="rating-4"
+                  name="rating-40"
                   class="mask mask-star-2 mask-half-2 bg-[#F85559]"
                   aria-label="5 star"
                 />
               </div>
-              <p
-                class="font-lato text-lg font-bold text-[#F85559] text-center mt-6"
+              <!-- !-- modal -->
+              <!-- Open the modal using ID.showModal() method -->
+              <button
+                class="btn btn-ghost text-[#F85559] font-lato text-lg font-bold"
+                onclick="my_modal_4.showModal()"
               >
                 Details
-              </p>
+              </button>
+              <dialog id="my_modal_4" class="modal">
+                <div
+                  class="modal-box flex flex-col justify-center items-center gap-8"
+                >
+                  <div>
+                    <img src="images/fruit9.png" alt="" />
+                  </div>
+                  <h1
+                    class="text-[#121212] font-lato text-4xl font-extrabold text-center"
+                  >
+                    Banana
+                  </h1>
+                  <p
+                    class="text-[#12121299] font-lato text-base font-medium text-center max-w-96"
+                  >
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                  <!-- rating -->
+                  <div class="rating rating-lg rating-half">
+                    <input type="radio" name="rating-1" class="rating-hidden" />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                      aria-label="0.5 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                      aria-label="1 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                      aria-label="1.5 star"
+                      checked="checked"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                      aria-label="2 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                      aria-label="2.5 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                      aria-label="3 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                      aria-label="3.5 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                      aria-label="4 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                      aria-label="4.5 star"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-4"
+                      class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                      aria-label="5 star"
+                    />
+                  </div>
+                  <a
+                    class="btn font-lato border-none text-xl font-extrabold text-white bg-[var(--primary-color)] hover:bg-[var(--primary-hover)] active:bg-[var(--primary-hover)] active:scale-95 active:opacity-90 transition-all duration-300 outline-none select-none touch-manipulation"
+                    href=""
+                    >Buy Now</a
+                  >
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button
+                        class="btn border border-[#F85559] text-[#F85559]"
+                      >
+                        Close
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
         </div>
