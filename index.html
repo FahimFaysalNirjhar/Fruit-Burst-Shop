@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Burst</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- DaisyUl & Tailwind CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
@@ -222,7 +230,7 @@
       </div>
       <!-- position -->
       <div
-        class="hidden lg:flex justify-around rounded-lg bg-[#FFF] shadow-[0_8px_60px_0_rgba(0,0,0,0.05)] max-w-5xl mx-auto position relative -top-20 md:p-6"
+        class="hidden lg:flex justify-around rounded-lg bg-[#FFF] shadow-[0_8px_60px_0_rgba(0,0,0,0.05)] max-w-5xl mx-auto position relative -top-20 p-6"
       >
         <div class="flex flex-col justify-center items-center">
           <img src="images/fruit1.png" alt="" />
@@ -256,5 +264,497 @@
         </div>
       </div>
     </header>
+    <main class="max-w-6xl mx-auto">
+      <!-- deal section -->
+      <section>
+        <!-- container -->
+        <div
+          class="flex flex-col gap-5 text-center m-5 md:flex-row md:text-start md:m-1 justify-between items-center"
+        >
+          <!-- description -->
+          <div class="max-w-xl">
+            <h1 class="text-[#121212] font-lato text-5xl font-extrabold mb-6">
+              Deal of the day
+            </h1>
+            <p class="font-lato text-[#12121299] font-medium">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+          <!-- countdown -->
+          <div class="grid auto-cols-max grid-flow-col gap-2 text-center">
+            <div class="flex flex-col justify-center items-center">
+              <span class="countdown font-lato text-3xl font-extrabold">
+                <span style="--value: 29" aria-live="polite" aria-label="29"
+                  >29</span
+                >
+              </span>
+              <span class="font-lato text-sm text-[#12121299] font-medium">
+                Days</span
+              >
+            </div>
+            <!-- Dot SVG -->
+            <div class="flex justify-center items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+              >
+                <path
+                  d="M12 6.75C11.8 6.75 11.61 6.67 11.47 6.53C11.33 6.39 11.25 6.2 11.25 6C11.25 5.8 11.33 5.61 11.47 5.47C11.61 5.33 11.8 5.25 12 5.25C12.2 5.25 12.39 5.33 12.53 5.47C12.67 5.61 12.75 5.8 12.75 6C12.75 6.2 12.67 6.39 12.53 6.53C12.39 6.67 12.2 6.75 12 6.75ZM12 12.75C11.8 12.75 11.61 12.67 11.47 12.53C11.33 12.39 11.25 12.2 11.25 12C11.25 11.8 11.33 11.61 11.47 11.47C11.61 11.33 11.8 11.25 12 11.25C12.2 11.25 12.39 11.33 12.53 11.47C12.67 11.61 12.75 11.8 12.75 12C12.75 12.2 12.67 12.39 12.53 12.53C12.39 12.67 12.2 12.75 12 12.75ZM12 18.75C11.8 18.75 11.61 18.67 11.47 18.53C11.33 18.39 11.25 18.2 11.25 18C11.25 17.8 11.33 17.61 11.47 17.47C11.61 17.33 11.8 17.25 12 17.25C12.2 17.25 12.39 17.33 12.53 17.47C12.67 17.61 12.75 17.8 12.75 18C12.75 18.2 12.67 18.39 12.53 18.53C12.39 18.67 12.2 18.75 12 18.75Z"
+                  stroke="#121212"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <span class="countdown font-lato text-3xl font-extrabold">
+                <span style="--value: 15" aria-live="polite" aria-label="15"
+                  >15</span
+                >
+              </span>
+              <span class="font-lato text-sm text-[#12121299] font-medium">
+                Hours</span
+              >
+            </div>
+            <!-- Dot SVG -->
+            <div class="flex justify-center items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+              >
+                <path
+                  d="M12 6.75C11.8 6.75 11.61 6.67 11.47 6.53C11.33 6.39 11.25 6.2 11.25 6C11.25 5.8 11.33 5.61 11.47 5.47C11.61 5.33 11.8 5.25 12 5.25C12.2 5.25 12.39 5.33 12.53 5.47C12.67 5.61 12.75 5.8 12.75 6C12.75 6.2 12.67 6.39 12.53 6.53C12.39 6.67 12.2 6.75 12 6.75ZM12 12.75C11.8 12.75 11.61 12.67 11.47 12.53C11.33 12.39 11.25 12.2 11.25 12C11.25 11.8 11.33 11.61 11.47 11.47C11.61 11.33 11.8 11.25 12 11.25C12.2 11.25 12.39 11.33 12.53 11.47C12.67 11.61 12.75 11.8 12.75 12C12.75 12.2 12.67 12.39 12.53 12.53C12.39 12.67 12.2 12.75 12 12.75ZM12 18.75C11.8 18.75 11.61 18.67 11.47 18.53C11.33 18.39 11.25 18.2 11.25 18C11.25 17.8 11.33 17.61 11.47 17.47C11.61 17.33 11.8 17.25 12 17.25C12.2 17.25 12.39 17.33 12.53 17.47C12.67 17.61 12.75 17.8 12.75 18C12.75 18.2 12.67 18.39 12.53 18.53C12.39 18.67 12.2 18.75 12 18.75Z"
+                  stroke="#121212"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <span class="countdown font-lato text-3xl font-extrabold">
+                <span style="--value: 25" aria-live="polite" aria-label="25"
+                  >25</span
+                >
+              </span>
+              <span class="font-lato text-sm text-[#12121299] font-medium">
+                Minutes</span
+              >
+            </div>
+            <!-- Dot SVG -->
+            <div class="flex justify-center items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+              >
+                <path
+                  d="M12 6.75C11.8 6.75 11.61 6.67 11.47 6.53C11.33 6.39 11.25 6.2 11.25 6C11.25 5.8 11.33 5.61 11.47 5.47C11.61 5.33 11.8 5.25 12 5.25C12.2 5.25 12.39 5.33 12.53 5.47C12.67 5.61 12.75 5.8 12.75 6C12.75 6.2 12.67 6.39 12.53 6.53C12.39 6.67 12.2 6.75 12 6.75ZM12 12.75C11.8 12.75 11.61 12.67 11.47 12.53C11.33 12.39 11.25 12.2 11.25 12C11.25 11.8 11.33 11.61 11.47 11.47C11.61 11.33 11.8 11.25 12 11.25C12.2 11.25 12.39 11.33 12.53 11.47C12.67 11.61 12.75 11.8 12.75 12C12.75 12.2 12.67 12.39 12.53 12.53C12.39 12.67 12.2 12.75 12 12.75ZM12 18.75C11.8 18.75 11.61 18.67 11.47 18.53C11.33 18.39 11.25 18.2 11.25 18C11.25 17.8 11.33 17.61 11.47 17.47C11.61 17.33 11.8 17.25 12 17.25C12.2 17.25 12.39 17.33 12.53 17.47C12.67 17.61 12.75 17.8 12.75 18C12.75 18.2 12.67 18.39 12.53 18.53C12.39 18.67 12.2 18.75 12 18.75Z"
+                  stroke="#121212"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <span class="countdown font-lato text-3xl font-extrabold">
+                <span style="--value: 10" aria-live="polite" aria-label="10"
+                  >10</span
+                >
+              </span>
+              <span class="font-lato text-sm text-[#12121299] font-medium">
+                Seconds</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- card container -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 mx-3"
+        >
+          <!-- card 1 -->
+          <div
+            class="card bg-base-100 shadow-sm justify-center items-center pt-8"
+          >
+            <figure>
+              <img src="images/fruit6.png" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2
+                class="text-xl font-bold text-[#121212] font-lato text-center mt-6"
+              >
+                12.90$ - 18.85$
+              </h2>
+              <hr
+                class="border-0 h-[1px] bg-[rgba(18,18,18,0.10)] max-w-52 text-center"
+              />
+              <p
+                class="font-lato text-[#12121299] text-base font-medium text-center my-6"
+              >
+                Apples
+              </p>
+              <!-- rating -->
+              <div class="rating rating-lg rating-half">
+                <input type="radio" name="rating-1" class="rating-hidden" />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                  aria-label="0.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                  aria-label="1 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                  aria-label="1.5 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                  aria-label="2 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                  aria-label="2.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                  aria-label="3 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                  aria-label="3.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                  aria-label="4 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                  aria-label="4.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                  aria-label="5 star"
+                />
+              </div>
+              <p
+                class="font-lato text-lg font-bold text-[#F85559] text-center mt-6"
+              >
+                Details
+              </p>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="card bg-base-100 shadow-sm justify-center items-center pt-8"
+          >
+            <figure>
+              <img src="images/fruit7.png" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2
+                class="text-xl font-bold text-[#121212] font-lato text-center mt-6"
+              >
+                12.90$ - 18.85$
+              </h2>
+              <hr
+                class="border-0 h-[1px] bg-[rgba(18,18,18,0.10)] max-w-52 text-center"
+              />
+              <p
+                class="font-lato text-[#12121299] text-base font-medium text-center my-6"
+              >
+                Orange
+              </p>
+              <!-- rating -->
+              <div class="rating rating-lg rating-half">
+                <input type="radio" name="rating-2" class="rating-hidden" />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                  aria-label="0.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                  aria-label="1 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                  aria-label="1.5 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                  aria-label="2 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                  aria-label="2.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                  aria-label="3 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                  aria-label="3.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                  aria-label="4 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                  aria-label="4.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                  aria-label="5 star"
+                />
+              </div>
+              <p
+                class="font-lato text-lg font-bold text-[#F85559] text-center mt-6"
+              >
+                Details
+              </p>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="card bg-base-100 shadow-sm justify-center items-center pt-8"
+          >
+            <figure>
+              <img src="images/fruit8.png" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2
+                class="text-xl font-bold text-[#121212] font-lato text-center mt-6"
+              >
+                12.90$ - 18.85$
+              </h2>
+              <hr
+                class="border-0 h-[1px] bg-[rgba(18,18,18,0.10)] max-w-52 text-center"
+              />
+              <p
+                class="font-lato text-[#12121299] text-base font-medium text-center my-6"
+              >
+                Red Dragon
+              </p>
+              <!-- rating -->
+              <div class="rating rating-lg rating-half">
+                <input type="radio" name="rating-3" class="rating-hidden" />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                  aria-label="0.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                  aria-label="1 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                  aria-label="1.5 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                  aria-label="2 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                  aria-label="2.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                  aria-label="3 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                  aria-label="3.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                  aria-label="4 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                  aria-label="4.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                  aria-label="5 star"
+                />
+              </div>
+              <p
+                class="font-lato text-lg font-bold text-[#F85559] text-center mt-6"
+              >
+                Details
+              </p>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div
+            class="card bg-base-100 shadow-sm justify-center items-center pt-8"
+          >
+            <figure>
+              <img src="images/fruit9.png" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2
+                class="text-xl font-bold text-[#121212] font-lato text-center mt-6"
+              >
+                12.90$ - 18.85$
+              </h2>
+              <hr
+                class="border-0 h-[1px] bg-[rgba(18,18,18,0.10)] max-w-52 text-center"
+              />
+              <p
+                class="font-lato text-[#12121299] text-base font-medium text-center my-6"
+              >
+                Banana
+              </p>
+              <!-- rating -->
+              <div class="rating rating-lg rating-half">
+                <input type="radio" name="rating-4" class="rating-hidden" />
+                <input
+                  type="radio"
+                  name="rating-4"
+                  class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                  aria-label="0.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-4"
+                  class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                  aria-label="1 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-4"
+                  class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                  aria-label="1.5 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-4"
+                  class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                  aria-label="2 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-4"
+                  class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                  aria-label="2.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-4"
+                  class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                  aria-label="3 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-4"
+                  class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                  aria-label="3.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-4"
+                  class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                  aria-label="4 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-4"
+                  class="mask mask-star-2 mask-half-1 bg-[#F85559]"
+                  aria-label="4.5 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-4"
+                  class="mask mask-star-2 mask-half-2 bg-[#F85559]"
+                  aria-label="5 star"
+                />
+              </div>
+              <p
+                class="font-lato text-lg font-bold text-[#F85559] text-center mt-6"
+              >
+                Details
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
