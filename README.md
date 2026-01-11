@@ -3,7 +3,7 @@
 ## Description
 
 **Fruit Burst** is a responsive e-commerce landing page built using **Tailwind CSS** and **DaisyUI**.  
-It showcases fruits, deals, banners, and a team section with a **CSS-only typewriter animation**.
+It showcases fruits, deals, banners, and a team section
 
 **Key Focus:**
 
